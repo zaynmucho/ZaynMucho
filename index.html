@@ -440,7 +440,7 @@
             
             const summaries = [
                 `Total Work Days: ${document.getElementById('summaryTotalDays').textContent}`,
-                `Oil Allowance (€2 Per Day): €${document.getElementById('oilAllowance').textContent}`,
+                `Fuel Allowance (€2 Per Day): €${document.getElementById('oilAllowance').textContent}`,
                 `Shift Earnings: €${document.getElementById('shiftEarnings').textContent}`
             ];
 
@@ -453,7 +453,7 @@
             yPos += 25;
             ctx.fillStyle = '#4CAF50';
             ctx.font = 'bold 24px Segoe UI';
-            ctx.fillText(`Total Earnings: €${document.getElementById('totalEarningsSummary').textContent}`, 30, yPos);
+            ctx.fillText(`Total Payment: €${document.getElementById('totalEarningsSummary').textContent}`, 30, yPos);
 
             // Export
             const image = canvas.toDataURL('image/jpeg', 0.9);
